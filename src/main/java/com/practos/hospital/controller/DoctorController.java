@@ -108,12 +108,6 @@ public class DoctorController{
         return "doctors";
     }
 
-@CrossOrigin()
-    @GetMapping("started")
-    public String started() {
-
-        return "doctors";
-    }
 
 
 
