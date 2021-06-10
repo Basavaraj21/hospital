@@ -160,4 +160,14 @@ public class UserController {
         return "SUCCESS";
 
     }
+
+ @CrossOrigin()
+    @GetMapping("/send/otp/{phoneno}")
+    public String send(@PathVariable("phoneno") String phone) {
+        OtpSender otpSender=new OtpSender();
+
+        OtpSender.sendOtp(phone);
+        return "SUCCESS";
+
+    }
 }
